@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "comarca",
+	"version": "${version}",
+	"name": "La Comarca",
+	"description": "Mod para la Comarca",
+	"authors": [
+		"BIN"
+	],
+	"contact": {
+		"homepage": "----",
+		"sources": "-----"
+	},
+	"license": "MIT",
+	"icon": "assets/comarca/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bin.comarca.LaComarca"
+		],
+		"client": [
+			"net.bin.comarca.LaComarcaClient"
+		],
+
+		"fabric-datagen": [
+			"net.bin.comarca.LaComarcaDataGenerator"
+		]
+	},
+	"mixins": [
+		"comarca.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
