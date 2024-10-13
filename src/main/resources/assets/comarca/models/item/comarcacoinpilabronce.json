@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "comarca:item/comarca_coin_pila_bronce"
+  }
+
+}
